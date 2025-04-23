@@ -9,7 +9,6 @@ import ContactForm from './components/ContactForm'
 import PageNotFound from './pages/PageNotFound'
 import Print from './components/Print'
 import Products from './pages/Products'
-import Add from './components/Add'
 
 const App = () => {
   const router = createBrowserRouter(
@@ -23,7 +22,6 @@ const App = () => {
         </Route>
         <Route path="products" element={<Products />}>
             <Route path='print' element={<Print />}/>
-            <Route path='add' element={<Add />}/>
         </Route>
         <Route path="*" element={<PageNotFound />} />
         
